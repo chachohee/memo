@@ -25,7 +25,7 @@
 
 | 기능           | 메서드 | 엔드포인트           | 설명                              | 응답 예시 (JSON)               |
 |----------------|--------|-----------------------|-------------------------------------|--------------------------------|
-| 메모 목록 조회 | GET    | `/api/memos`          | 전체 메모 목록을 조회              | `List<MemoResponseDto>` |
+| 메모 목록 조회 | GET    | `/api/memos`          | 전체 메모 목록을 조회              | List`<MemoResponseDto>` |
 | 메모 생성      | POST   | `/api/memos`          | 새 메모 생성                        | MemoResponseDto |
 | 메모 수정      | PUT    | `/api/memos/{id}`     | 특정 메모 내용 수정                | Long |
 | 메모 삭제      | DELETE | `/api/memos/{id}`     | 특정 메모 삭제                      | Long |
