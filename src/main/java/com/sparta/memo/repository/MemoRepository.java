@@ -3,6 +3,7 @@ package com.sparta.memo.repository;
 import com.sparta.memo.dto.MemoRequestDto;
 import com.sparta.memo.dto.MemoResponseDto;
 import com.sparta.memo.entity.Memo;
+import lombok.RequiredArgsConstructor;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
@@ -16,13 +17,10 @@ import java.sql.Statement;
 import java.util.List;
 
 @Repository
+@RequiredArgsConstructor
 public class MemoRepository {
 
     private final JdbcTemplate jdbcTemplate;
-
-    public MemoRepository(JdbcTemplate jdbcTemplate) {
-        this.jdbcTemplate = jdbcTemplate;
-    }
 
     public Memo save(Memo memo) {
         // DB 저장
